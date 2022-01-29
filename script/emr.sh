@@ -2,7 +2,7 @@
 ## run on master 节点
 
 ## please input the s3 bucket for temporary saving directory.
-export bucket=emr-wy1
+export bucket=****
 ##
 aws s3 rm s3://${bucket}/path/to/copy/ --recursive
 aws s3 cp /etc/yum.repos.d/ s3://${bucket}/path/to/copy/repo/ --recursive

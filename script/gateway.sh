@@ -2,7 +2,7 @@
 ## run on gateway 节点
 
 ## please input the bucket where the emr files are saving.
-export bucket=emr-wy1
+export bucket=****
 
 ##
 sudo rm -rf /etc/spark/conf/*
