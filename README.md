@@ -1,6 +1,6 @@
 # emr-gateway
 
-This project is used to set up an gateway for AWS EMR.
+This project is used to set up a gateway for AWS EMR.
 You can use  command such as spark, hive, beeline, hadoop etc , on this gateway.
 There are several steps.
 
