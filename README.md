@@ -7,7 +7,7 @@ There are several steps.
 Requisit:
 You already set up an AWS EMR.
 
-1 launch an EC2 instance as an gateway instance， in the same VPC as EMR use
+1 launch an EC2 instance as a gateway instance， in the same VPC as EMR use
 
 2 Configure EMR Security Group inbound rule, including master, core, task's security group.
 Let the gateway can send traffic to emr nodes.
@@ -15,7 +15,7 @@ Let the gateway can send traffic to emr nodes.
 3 you need an S3 bucket, for temporary saving files. Copy the s3 bucket name.
 
 4 ssh the EMR master node, upload the emr.sh .
-Modiy the emr.sh , input the correct s3 bucket name , you copied in the previous step.
+Modiy the emr.sh , input the correct s3 bucket name that you copied in the previous step.
 Run the emr.sh
 
 5 configure the gateway.
