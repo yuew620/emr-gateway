@@ -18,3 +18,5 @@ aws s3 cp /usr/lib/tez s3://${bucket}/path/to/copy/tez/ --recursive
 aws s3 cp /usr/lib/hive-hcatalog/share/hcatalog s3://${bucket}/path/to/copy/hcatalog/ --recursive
 aws s3 cp /usr/lib/hadoop-lzo/lib/ s3://${bucket}/path/to/copy/hadoop-lzo/ --recursive
 aws s3 cp /etc/tez/conf  s3://${bucket}/path/to/copy/tez-conf/ --recursive
+aws s3 cp /etc/flink/conf  s3://${bucket}/path/to/copy/flink/ --recursive
+aws s3 cp /usr/lib/flink  s3://${bucket}/path/to/copy/flink-lib/ --recursive

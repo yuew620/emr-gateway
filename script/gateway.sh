@@ -52,3 +52,12 @@ sudo chmod -R 755 /etc/hive/conf/hive-log4j2.properties
 sudo mkdir -p /var/log/hive/user/hadoop/
 sudo chown hadoop -R /var/log/hive/user/hadoop/
 sudo chown hadoop -R /etc/hive/conf/hive-log4j2.properties
+
+sudo rm -rf /usr/lib/flink/*
+sudo rm -rf /etc/flink/conf/*
+sudo chmod 777 -R /var/log/flink/
+sudo chmod 777 -R /var/log/flink-cli/
+sudo yum install -y flink
+sudo aws s3 cp s3://${bucket}/path/to/copy/flink/ /etc/flink/conf --recursive
+sudo aws s3 cp s3://${bucket}/path/to/copy/flink-lib/ /usr/lib/flink --recursive
+sudo chmod -R 755 /usr/lib/flink
